@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../css/users.css";
 import Layout from "../shared/Layout.js";
+import apiUrl from "../../apiConfig";
 
 function Users() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ function Users() {
 
   const fetchData = async () => {
     try {
-      const response = await axios("http://localhost:3000/api/users");
+      const response = await axios(`${apiUrl}/users`);
       console.log(response.data.users);
       setUsers(response.data.users);
     } catch (error) {
