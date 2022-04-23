@@ -50,7 +50,7 @@ const ExerciseForm = ({
           name="description"
           onChange={(e) => handleChange(e)}
         />
-        <label>Duration:</label>
+        <label>Duration(minutes)</label>
         <input
           required
           placeholder="Duration"
