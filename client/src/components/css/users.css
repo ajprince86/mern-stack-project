@@ -1,0 +1,51 @@
+/* div {
+  width: 200px;
+}
+
+h2 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid black;
+}
+
+li:last-child {
+  border: none;
+}
+
+li a {
+  text-decoration: none;
+  color: red;
+  display: block;
+  width: 200px;
+  font-family: "Roboto", sans-serif;
+}
+
+li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+button {
+  background-color: red;
+  border-radius: 25%;
+  /* border: none; */
+  /* color: black;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  font-size: 15px; */
+  /* border-spacing: 550px; */
+}
