@@ -130,6 +130,23 @@ form {
   background-color: black;
 }
 
+.img-left {
+  width: 350px;
+  height: 400px;
+  float: left;
+  display: inline;
+  width: 33%;
+  margin-left: 1px;
+}
+.img-right {
+  width: 350px;
+  height: 400px;
+  float: right;
+  display: inline;
+  width: 33%;
+  margin-left: 1px;
+}
+
 /* // <div>
     //   <h3>Create New Exercise</h3>
     //   <form onSubmit={(e) => handleSubmit(e)}>
