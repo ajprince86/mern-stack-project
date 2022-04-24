@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../css/exercises.css";
 import Layout from "../shared/Layout.js";
+import apiUrl from "../../apiConfig";
 
 function Exercises() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ function Exercises() {
 
   const fetchData = async () => {
     try {
-      const response = await axios("http://localhost:3000/api/exercises");
+      const response = await axios(`${apiUrl}/exercises`);
       console.log(response.data.exercises);
       setExercises(response.data.exercises);
     } catch (error) {
@@ -27,7 +28,7 @@ function Exercises() {
 
   const destroy = (id) => {
     axios({
-      url: `http://localhost:3000/api/exercises/${id}`,
+      url: `${apiUrl}/${id}`,
       method: `DELETE`,
     })
       .then(() => setDeleted(true))
@@ -80,7 +81,6 @@ function Exercises() {
           </table>
         </div>
         <br></br>
-
         <button onClick={() => navigate(`/`)}>Back to Home</button>
       </Layout>
     </div>

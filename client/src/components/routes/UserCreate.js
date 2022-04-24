@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../shared/Layout";
 import axios from "axios";
 import UserForm from "../shared/UserForm";
+import apiUrl from "../../apiConfig";
 
 function UserCreate() {
   const navigate = useNavigate();
@@ -39,7 +40,7 @@ function UserCreate() {
     event.preventDefault();
     //If the entry is created in the database, save the response data in the state
     axios({
-      url: `http://localhost:3000/api/users`,
+      url: `${apiUrl}/users`,
       method: `POST`,
       data: user,
     })

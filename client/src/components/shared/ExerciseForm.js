@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import apiUrl from "../../apiConfig";
+
 const ExerciseForm = ({
   exercise,
   handleSubmit,
@@ -12,7 +14,7 @@ const ExerciseForm = ({
 
   const fetchData = async () => {
     try {
-      const response = await axios("http://localhost:3000/api/users");
+      const response = await axios(`${apiUrl}/users`);
       console.log(response.data.users);
       setUsers(response.data.users);
     } catch (error) {

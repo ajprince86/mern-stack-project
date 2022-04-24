@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import Layout from "../shared/Layout";
+import apiUrl from "../../apiConfig";
 
 function User() {
   const [user, setUser] = useState({});
@@ -19,7 +20,7 @@ function User() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios(`http://localhost:3000/api/users/${id}`);
+        const response = await axios(`${apiUrl}/users/${id}`);
         //console.log(response.data);
         console.log(response.data.user);
         setUser(response.data.user);
@@ -38,7 +39,7 @@ function User() {
 
   const destroy = () => {
     axios({
-      url: `http://localhost:3000/api/users/${id}`,
+      url: `${apiUrl}/${id}`,
       method: `DELETE`,
     })
       .then(() => setDeleted(true))
@@ -101,8 +102,8 @@ function User() {
   return (
     <Layout>
       <h2>{user.name}</h2>
-      <h3>Height:{user.current_height}</h3>
-      <h3>Weight:{user.current_weight}</h3>
+      <h3>Height: {user.current_height}</h3>
+      <h3>Weight: {user.current_weight}</h3>
       <h3>Please Enter Your Current Weight and Height</h3>
       <h2>Weight:</h2>
       <input type="number" placeholder="weight" onChange={weightChange} />

@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import UserForm from "../shared/UserForm";
 import Layout from "../shared/Layout";
 import axios from "axios";
+import apiUrl from "../../apiConfig";
 
 function UserUpdate() {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ function UserUpdate() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios({
-      url: `http://localhost:3000/api/users/${id}`,
+      url: `${apiUrl}/${id}`,
       method: "PUT",
       data: user,
     })
@@ -45,7 +46,7 @@ function UserUpdate() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios(`http://localhost:3000/api/users/${id}`);
+        const response = await axios(`${apiUrl}/${id}`);
         console.log(response);
         setUser(response.data.user);
       } catch (error) {
@@ -57,7 +58,8 @@ function UserUpdate() {
 
   useEffect(() => {
     if (updated) {
-      return navigate(`/users/${id}`);
+      // return navigate(`/users/${id}`);
+      return navigate(`${apiUrl}/${id}`);
     }
   });
 

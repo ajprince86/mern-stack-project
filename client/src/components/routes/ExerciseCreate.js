@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ExerciseForm from "../shared/ExerciseForm";
 import Layout from "../shared/Layout";
+import apiUrl from "../../apiConfig";
 
 function ExerciseCreate() {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ function ExerciseCreate() {
     console.log(event);
     //If the entry is created in the database, save the response data in the state
     axios({
-      url: `http://localhost:3000/api/exercises`,
+      url: `${apiUrl}/exercises`,
       method: `POST`,
       data: exercise,
     })
@@ -52,7 +53,7 @@ function ExerciseCreate() {
   useEffect(() => {
     if (createdExercise) {
       console.log("Created");
-      return navigate("/users");
+      return navigate("/exercises");
     }
   }, [createdExercise, navigate]);
 

@@ -38,7 +38,6 @@ function Users() {
         <h1>Our Current Users</h1>
         <p>Join our growing community</p>
         <button onClick={() => navigate(`/create-user`)}>Create User</button>
-
         <ul>{usersData}</ul>
         <button onClick={() => navigate(`/`)}>Back to Home</button>
       </Layout>
