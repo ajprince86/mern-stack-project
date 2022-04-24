@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import apiUrl from "../../apiConfig";
+import "../css/exerciseForm.css";
 
 const ExerciseForm = ({
   exercise,
@@ -26,11 +27,12 @@ const ExerciseForm = ({
   }, []);
 
   return (
-    <div>
-      <h3>Create New Exercise</h3>
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <label>Username:</label>
+    <form className="form" onSubmit={(e) => handleSubmit(e)}>
+      {/* <div className="title">Progress not perfection</div> */}
+      <div className="subtitle">Progress not perfection</div>
+      <div className="input-container ic1">
         <select
+          className="input"
           required
           value={users.name}
           onChange={(e) => handleChangeSelect(e)}
@@ -44,35 +46,60 @@ const ExerciseForm = ({
             );
           })}
         </select>
-        <label>Workout:</label>
+        <div className="cut">Username:</div>
+        <label className="placeholder"></label>
+      </div>
+
+      <option></option>
+      <div className="input-container ic1">
         <input
           required
-          placeholder="Workout"
-          defaultValue={exercise.description}
+          placeholder=" "
           name="description"
+          defaultValue={exercise.description}
+          id="description"
+          className="input"
+          type="text"
           onChange={(e) => handleChange(e)}
         />
-        <label>Duration(minutes)</label>
+        <div className="cut">Workout:</div>
+        <label className="placeholder"></label>
+      </div>
+      <div className="input-container ic2">
         <input
           required
-          placeholder="Duration"
-          defaultValue={exercise.duration}
           name="duration"
+          defaultValue={exercise.duration}
+          id="duration"
+          className="input"
+          type="number"
+          placeholder=" "
           onChange={(e) => handleChange(e)}
         />
+        <div className="cut">Duration</div>
+        <label className="placeholder"></label>
+      </div>
+      <div className="input-container ic2">
         <input
           required
           name="date"
-          placeholder="mm-dd-yyy"
           defaultValue={exercise.date}
+          id="date"
+          className="input"
+          type="text"
+          placeholder=" "
           onChange={(e) => handleChange(e)}
         />
-        <button type="submit">Submit</button>
-        <Link to={cancelPath}>
-          <button>Cancel</button>
-        </Link>
-      </form>
-    </div>
+        <div className="cut">Date</div>
+        <label className="placeholder"></label>
+      </div>
+      <button type="submit" className="submit">
+        Submit
+      </button>
+      <Link to={cancelPath}>
+        <button className="cancel">Cancel</button>
+      </Link>
+    </form>
   );
 };
 
