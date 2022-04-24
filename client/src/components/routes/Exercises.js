@@ -28,7 +28,7 @@ function Exercises() {
 
   const destroy = (id) => {
     axios({
-      url: `${apiUrl}/${id}`,
+      url: `${apiUrl}/exercises/${id}`,
       method: `DELETE`,
     })
       .then(() => setDeleted(true))

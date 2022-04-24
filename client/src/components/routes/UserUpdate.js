@@ -8,6 +8,7 @@ import apiUrl from "../../apiConfig";
 function UserUpdate() {
   const navigate = useNavigate();
   const { id } = useParams();
+  console.log(id);
   const [inches, setInches] = useState("");
   const [updated, setUpdated] = useState(false);
   const [user, setUser] = useState({
@@ -18,6 +19,7 @@ function UserUpdate() {
 
   const handleChangeInches = (event) => {
     setInches(event.target.value + "");
+    console.log(event);
     console.log(inches);
     const updatedField = {
       current_height: user.current_height + "'" + event.target.value,
@@ -35,7 +37,7 @@ function UserUpdate() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios({
-      url: `${apiUrl}/${id}`,
+      url: `${apiUrl}/users/${id}`,
       method: "PUT",
       data: user,
     })
@@ -46,7 +48,7 @@ function UserUpdate() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios(`${apiUrl}/${id}`);
+        const response = await axios(`${apiUrl}/users/${id}`);
         console.log(response);
         setUser(response.data.user);
       } catch (error) {
@@ -59,7 +61,7 @@ function UserUpdate() {
   useEffect(() => {
     if (updated) {
       // return navigate(`/users/${id}`);
-      return navigate(`${apiUrl}/${id}`);
+      return navigate(`${apiUrl}/users/${id}`);
     }
   });
 

@@ -39,7 +39,7 @@ function User() {
 
   const destroy = () => {
     axios({
-      url: `${apiUrl}/${id}`,
+      url: `${apiUrl}/users/${id}`,
       method: `DELETE`,
     })
       .then(() => setDeleted(true))
@@ -48,7 +48,7 @@ function User() {
 
   useEffect(() => {
     if (deleted) {
-      return navigate("/");
+      return navigate("/users");
     }
   }, [deleted, navigate]);
 
@@ -145,13 +145,3 @@ function User() {
 }
 
 export default User;
-
-// BMI Ranges
-// BMI	Category
-// < 16.0	Severely Underweight
-// 16.0 - 18.4	Underweight
-// 18.5 - 24.9	Normal
-// 25.0 - 29.9	Overweight
-// 30.0 - 34.9	Moderately Obese
-// 35.0 - 39.9	Severely Obese
-// > 40.0	Morbidly Obese

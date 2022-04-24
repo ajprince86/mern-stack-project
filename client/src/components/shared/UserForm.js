@@ -42,7 +42,7 @@ const UserForm = ({
       <h3>Weight: Pounds</h3>
       <input
         required
-        type="text"
+        type="number"
         placeholder="weight"
         defaultValue={user.current_weight}
         name="current_weight"

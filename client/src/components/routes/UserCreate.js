@@ -30,7 +30,7 @@ function UserCreate() {
 
   const handleChange = (event) => {
     console.log(event.target.name);
-    const updatedField = { [event.target.name]: event.target.value };
+    const updatedField = { [event.target.name]: event.target.value.toString() };
     console.log(updatedField);
     const editedUser = Object.assign(user, updatedField);
     setUser(editedUser);
@@ -41,6 +41,7 @@ function UserCreate() {
     //If the entry is created in the database, save the response data in the state
     axios({
       url: `${apiUrl}/users`,
+      //Added /users after apiUrl to fix issues with update
       method: `POST`,
       data: user,
     })
