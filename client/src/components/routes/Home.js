@@ -1,5 +1,5 @@
 import Layout from "../shared/Layout";
-import image from "../images/workout.png";
+import image from "../images/workout_4.avif";
 
 const Home = () => {
   return (
