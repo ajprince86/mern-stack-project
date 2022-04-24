@@ -60,8 +60,8 @@ function UserUpdate() {
 
   useEffect(() => {
     if (updated) {
-      // return navigate(`/users/${id}`);
-      return navigate(`${apiUrl}/users/${id}`);
+      return navigate(`/users/${id}`);
+      // return navigate(`${apiUrl}/users/${id}`);
     }
   });
 

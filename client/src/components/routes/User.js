@@ -14,14 +14,12 @@ function User() {
   const [status, setStatus] = useState("");
 
   const { id } = useParams();
-  // console.log(id);
   let navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios(`${apiUrl}/users/${id}`);
-        //console.log(response.data);
         console.log(response.data.user);
         setUser(response.data.user);
       } catch (error) {
@@ -80,19 +78,19 @@ function User() {
     const statusForbmi = () => {
       if (bmi === 0) {
         setStatus("");
-      } else if (bmi < 16) {
+      } else if (bmi < 18) {
         setStatus("SEVERLY UNDERWEIGHT");
-      } else if (bmi > 16 && bmi <= 18.4) {
+      } else if (bmi > 18 && bmi <= 21) {
         setStatus("Underweight");
-      } else if (bmi > 18.4 && bmi <= 24.9) {
+      } else if (bmi > 21 && bmi <= 28) {
         setStatus("Normal");
-      } else if (bmi > 24.9 && bmi <= 29.9) {
+      } else if (bmi > 28 && bmi <= 32) {
         setStatus("Overweight");
-      } else if (bmi > 29.9 && bmi <= 34.9) {
+      } else if (bmi > 32 && bmi <= 37) {
         setStatus("Moderatley Overweight");
-      } else if (bmi > 34.9 && bmi < 39.9) {
+      } else if (bmi > 37 && bmi < 42) {
         setStatus("Severly Obese");
-      } else if (bmi > 39.9) {
+      } else if (bmi > 42) {
         setStatus("MORBIDLY OBESE");
       }
     };
@@ -104,18 +102,9 @@ function User() {
       <h2>{user.name}</h2>
       <h3>Height: {user.current_height}</h3>
       <h3>Weight: {user.current_weight}</h3>
-      <h3>Please Enter Your Current Weight and Height</h3>
-      <h2>Weight:</h2>
-      <input type="number" placeholder="weight" onChange={weightChange} />
-      <br />
+      <h3>Please Enter Your Current Height and Weight</h3>
       <h2>Feet:</h2>
-      <input
-        max="7"
-        min="1"
-        type="number"
-        // placeholder="feeting"
-        onChange={heightChangeFoot}
-      />
+      <input max="7" min="1" type="number" onChange={heightChangeFoot} />
       <br />
       <h2>Inches:</h2>
       <input
@@ -125,13 +114,22 @@ function User() {
         placeholder="inches"
         onChange={heightChangeInches}
       />
+      <h2>Weight:</h2>
+      <input type="number" placeholder="weight" onChange={weightChange} />
+      <br />
       <br />
       <br />
       <button onClick={bmiCalculator}>Whats My Current BMI</button>
       <h2>{bmi}</h2>
-      <img src={bmi} />
       <p>Based on your height weight you are</p>
       <p>{status}</p>
+      <p>
+        {bmi > 28
+          ? `Based on our calculations you should lose about ${
+              Math.round(bmi - 28) * 5
+            } pounds to be in good shape `
+          : `You are in great shape, keep up the good work!!`}
+      </p>
       <br />
       <button onClick={() => destroy()}>Delete User</button>
       <NavLink to={`/users/${id}/edit`}>
