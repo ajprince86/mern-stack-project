@@ -44,7 +44,7 @@ function Exercises() {
   return (
     <div>
       <Layout>
-        <h1>Logged Exercises</h1>
+        <h1 className="new-font">Logged Exercises</h1>
 
         <div class="tbl-header">
           <table cellpadding="0" cellspacing="0" border="0">
@@ -70,7 +70,10 @@ function Exercises() {
                     <td>{exercise.duration}</td>
                     <td>{exercise.date}</td>
                     <td>
-                      <button onClick={() => destroy(exercise._id)}>
+                      <button
+                        className="delete-exercise"
+                        onClick={() => destroy(exercise._id)}
+                      >
                         Delete
                       </button>
                     </td>
@@ -81,7 +84,9 @@ function Exercises() {
           </table>
         </div>
         <br></br>
-        <button onClick={() => navigate(`/`)}>Back to Home</button>
+        <button className="back-home" onClick={() => navigate(`/`)}>
+          Back to Home
+        </button>
       </Layout>
     </div>
   );

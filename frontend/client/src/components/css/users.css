@@ -1,13 +1,3 @@
-/* div {
-  width: 200px;
-}
-
-h2 {
-  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-} */
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -17,6 +7,7 @@ ul {
 li {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
   border-bottom: 1px solid black;
+  color: red;
 }
 
 li:last-child {
@@ -28,6 +19,7 @@ li a {
   color: red;
   display: block;
   width: 200px;
+  font-weight: bolder;
   font-family: "Roboto", sans-serif;
 }
 
@@ -39,13 +31,36 @@ li a:hover {
 button {
   background-color: red;
   border-radius: 25%;
-  /* border: none; */
-  /* color: black;
-  padding: 2px 4px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+}
 
-  font-size: 15px; */
-  /* border-spacing: 550px; */
+.create-user {
+  background-color: green;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 15px;
+  height: 45px;
+  margin-top: 5px;
+  outline: 0;
+  text-align: center;
+  width: 8%;
+  font-weight: bolder;
+}
+
+.back-home {
+  background-color: black;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: red;
+  cursor: pointer;
+  font-size: 15px;
+  height: 45px;
+  margin-top: 5px;
+  outline: 0;
+  text-align: center;
+  width: 8%;
+  font-weight: bolder;
 }

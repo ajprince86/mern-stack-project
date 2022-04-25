@@ -5,11 +5,13 @@ import "../css/home.css";
 const Home = () => {
   return (
     <Layout>
-      <p>Welcome to the Health App</p>
-      <p>
+      <h1 className="new-font">Welcome to the Health App</h1>
+      <p className="initial">
         Helping you reach your workout goals <br /> one day at a time
       </p>
-
+      {/* <div>
+        <p className="new-font">Just sitting here</p>
+      </div> */}
       <img className="home" src={image} alt="pic" />
     </Layout>
   );

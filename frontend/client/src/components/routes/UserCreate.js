@@ -56,7 +56,7 @@ function UserCreate() {
 
   return (
     <Layout>
-      <h1>User Registration</h1>
+      <h1 className="new-font">User Registration</h1>
       <UserForm
         user={user}
         handleChange={(e) => handleChange(e)}

@@ -1,6 +1,5 @@
 import React from "react";
 import image from "../images/workout_fail.png";
-// import "../images/notFound.css";
 
 function NotFound() {
   return (

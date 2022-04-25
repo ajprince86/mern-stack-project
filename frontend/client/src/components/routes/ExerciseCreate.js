@@ -59,7 +59,7 @@ function ExerciseCreate() {
 
   return (
     <Layout>
-      <h1>Log your Workout</h1>
+      <h1 className="new-font">Log your Workout</h1>
       <ExerciseForm
         exercise={exercise}
         handleChange={(e) => handleChange(e)}

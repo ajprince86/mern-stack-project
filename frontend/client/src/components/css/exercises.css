@@ -75,6 +75,40 @@ section {
   text-decoration: underline;
 }
 
+.back-home {
+  background-color: black;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: red;
+  cursor: pointer;
+  font-size: 15px;
+  height: 45px;
+  margin-top: 5px;
+  outline: 0;
+  text-align: center;
+  width: 8%;
+  font-weight: bolder;
+}
+
+.delete-exercise {
+  font-weight: bolder;
+  background-color: red;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  height: 30px;
+  margin-top: 5px;
+  outline: 0;
+  text-align: center;
+  /* width: 20%; */
+  width: 60px;
+  font-weight: bolder;
+}
+
 /* for custom scrollbar for webkit browser*/
 
 /* ::-webkit-scrollbar {

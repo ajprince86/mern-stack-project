@@ -1,3 +1,19 @@
 img.home {
   height: 800px;
 }
+
+.new-font {
+  font-family: "Faster One", cursive;
+  /* font-family: "Roboto", sans-serif; */
+  /* width: 350px; */
+  /* height: 400px; */
+  /* float: left; */
+  /* display: inline; */
+  /* width: 33%; */
+  /* margin-left: 1px; */
+  /* font-size: 50px; */
+}
+
+.initial {
+  font-weight: bolder;
+}

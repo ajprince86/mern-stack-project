@@ -5,8 +5,9 @@ import Footer from "./Footer";
 const Layout = (props) => {
   return (
     <div>
-      <h3>Health App to help you reach your goals</h3>
+      <h5>Track your hard work</h5>
       <Nav />
+      <br />
       {props.children}
       {/* Bring of Children of that component, which is "Welcome to the Health app" */}
       <Footer />

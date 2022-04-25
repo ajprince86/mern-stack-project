@@ -1,0 +1,101 @@
+.bmi-calc {
+  background-color: green;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 15px;
+  height: 30px;
+  margin-top: 5px;
+  outline: 0;
+  text-align: center;
+  width: 6%;
+  font-weight: bolder;
+}
+
+.delete-user {
+  background-color: red;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  height: 35px;
+  margin-top: 5px;
+  outline: 0;
+  text-align: center;
+  align-items: center;
+  width: 15%;
+  font-weight: bolder;
+}
+
+.edit-user {
+  background-color: grey;
+  border-radius: 15px;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  height: 35px;
+  margin-top: 5px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.back-to {
+  background-color: green;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: z;
+  cursor: pointer;
+  font-size: 15px;
+  height: 35px;
+  margin-top: 5px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.buttons {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  height: 75px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.title-name {
+  font-family: "Faster One", cursive;
+}
+
+.user-info {
+  margin-top: 15%;
+  border: solid black 1px;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+}
+
+span {
+  color: red;
+  font-weight: bolder;
+}
+
+.user-bmi {
+  display: flex;
+  margin: auto;
+  width: 6%;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* border: solid red 1px; */
+  /* height: 15px; */
+}
