@@ -14,7 +14,6 @@ const UserForm = ({
     <div>
       <img className="img-left" src={image} alt="pic" />
       <img className="img-right" src={image2} alt="pic" />
-
       <form className="form" onSubmit={(e) => handleSubmit(e)}>
         <div className="title">Welcome to the journey</div>
         <div className="subtitle">Fill out to register!</div>

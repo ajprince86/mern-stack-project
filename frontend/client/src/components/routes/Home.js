@@ -1,5 +1,6 @@
 import Layout from "../shared/Layout";
 import image from "../images/workout_4.avif";
+import "../css/home.css";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
         Helping you reach your workout goals <br /> one day at a time
       </p>
 
-      <img src={image} alt="pic" />
+      <img className="home" src={image} alt="pic" />
     </Layout>
   );
 };

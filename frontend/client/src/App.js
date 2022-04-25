@@ -8,6 +8,7 @@ import UserCreate from "./components/routes/UserCreate";
 import User from "./components/routes/User";
 import ExerciseCreate from "./components/routes/ExerciseCreate";
 import UserUpdate from "./components/routes/UserUpdate";
+import NotFound from "./components/routes/NotFound";
 // import UserEdit from "./components/routes/UserEdit";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/create-exercise" element={<ExerciseCreate />} />
         <Route path="/users/:id" element={<User />} />
         <Route path="/users/:id/edit" element={<UserUpdate />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
