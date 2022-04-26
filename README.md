@@ -14,5 +14,6 @@ Individuals who sign up for the tracker will be able to do the following:<br/>
 > 5. Log an exercise<br/>
 > 6. Edit user <br/>
 > 7. Delete user <br/>
+> 8. See all logged exercises
 
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
