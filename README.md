@@ -16,6 +16,12 @@ Individuals who sign up for the tracker will be able to do the following:<br/>
 > 7. Delete user <br/>
 > 8. See all logged exercises
 
+## Technologies Used
+* React v18
+* Mongoose
+* Nodejs
+* Express
+
 ## API endpoints
 * https://final-workout-database.herokuapp.com/api               HOME PAGE/ROOT
 * https://final-workout-database.herokuapp.com/api/users         ACTIVE USERS 
@@ -28,15 +34,12 @@ Individuals who sign up for the tracker will be able to do the following:<br/>
 ## Dependencies
 Frontend:<br/>
 * Axios
-* React v18
 * React-Router
 * React-Router-Dom
 
 Backend:<br/>
 * Cors
 * Dotenv
-* Express
-* Mongoose
 * Morgan
 * Nodemon
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
