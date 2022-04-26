@@ -58,7 +58,7 @@ Backend:<br/>
 * https://final-workout-database.herokuapp.com/api/create-exercise  CREATE EXERCISE
 
 ## SCHEMAS
-const Exercise = new Schema(
+<pre>const Exercise = new Schema(
   {
     name: { type: String, required: true },
     description: { type: String, required: true },
