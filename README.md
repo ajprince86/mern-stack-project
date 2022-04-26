@@ -58,7 +58,16 @@ Backend:<br/>
 * https://final-workout-database.herokuapp.com/api/create-exercise  CREATE EXERCISE
 
 ## SCHEMAS
-<pre>const Exercise = new Schema(
+<pre>const User = new Schema(
+  {
+    name: { type: String, required: true },
+    current_height: { type: String, required: true },
+    current_weight: { type: String, required: true },
+  },
+  { timestamps: true }
+);
+
+const Exercise = new Schema(
   {
     name: { type: String, required: true },
     description: { type: String, required: true },
@@ -70,14 +79,7 @@ Backend:<br/>
   }
 );
 
-const User = new Schema(
-  {
-    name: { type: String, required: true },
-    current_height: { type: String, required: true },
-    current_weight: { type: String, required: true },
-  },
-  { timestamps: true }
-);
+
 </pre>
 
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
