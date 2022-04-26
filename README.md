@@ -89,4 +89,4 @@ const Exercise = new Schema(
 
 </pre>
 
-<br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
+
