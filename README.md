@@ -16,13 +16,13 @@ Individuals who sign up for the tracker will be able to do the following:<br/>
 > 7. Delete user <br/>
 > 8. See all logged exercises
 
-## Technologies Used
+## Technologies Used 👨🏽‍💻
 * React v18
 * Mongoose
 * Nodejs
 * Express
 
-## API endpoints
+## API ENDPOINTS
 * https://final-workout-database.herokuapp.com/api               HOME PAGE/ROOT
 * https://final-workout-database.herokuapp.com/api/users         ACTIVE USERS 
 * https://final-workout-database.herokuapp.com/api/create-user   CREATE USER
@@ -31,7 +31,7 @@ Individuals who sign up for the tracker will be able to do the following:<br/>
 * https://final-workout-database.herokuapp.com/api/exercises       Exercises LOGGED 
 * https://final-workout-database.herokuapp.com/api/create-exercise  CREATE EXERCISE
 
-## Dependencies
+## Dependencies 
 Frontend:<br/>
 * Axios
 * React-Router
