@@ -4,7 +4,7 @@ This simple app was created by yours truly, for the final Full-Stack-Project for
 I have gone thru many changes In my project but I still have a lot off additions I would like to add. See further down for more details.<br/>
 
 ## DEPLOYMENT(Links)
-Heroku https://final-workout-database.herokuapp.com/api/users
+Heroku https://final-workout-database.herokuapp.com/api/users<br/>
 Netlify 
 
 ## Workit is an exercise tracker for individuals who would like to track their time being active.
