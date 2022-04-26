@@ -34,6 +34,20 @@ Backend:<br/>
 * Morgan
 * Nodemon
 
+## MVP
+* Full CRUD for User info
+* Calculate BMI(adjusted by me)
+* Log exercises
+* View other Users info
+
+## (POST) MVP
+* User Auth(Sign in/Sign up/Auth view)
+* User Avatar selection
+* Meal plan suggestions based on user selection
+* Workout demonstrations
+* Workout planner feature
+* Weekly Challenges
+
 ## API ENDPOINTS
 * https://final-workout-database.herokuapp.com/api               HOME PAGE/ROOT
 * https://final-workout-database.herokuapp.com/api/users         ACTIVE USERS 
