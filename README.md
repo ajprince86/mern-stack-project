@@ -3,6 +3,10 @@ Workit is a fun app that uses full CRUD operations. <br/>
 This simple app was created by yours truly, for the final Full-Stack-Project for Per-Scholas.<br/>
 I have gone thru many changes In my project but I still have a lot off additions I would like to add. See further down for more details.<br/>
 
+## DEPLOYMENT(Links)
+Heroku https://final-workout-database.herokuapp.com/api/users<br/>
+Netlify 
+
 ## Workit is an exercise tracker for individuals who would like to track their time being active.
 
 Individuals who sign up for the tracker will be able to do the following:<br/>
@@ -56,5 +60,30 @@ Backend:<br/>
 * https://final-workout-database.herokuapp.com/api/users{id}      USER PROFILE  
 * https://final-workout-database.herokuapp.com/api/exercises       Exercises LOGGED 
 * https://final-workout-database.herokuapp.com/api/create-exercise  CREATE EXERCISE
+
+## SCHEMAS
+<pre>const User = new Schema(
+  {
+    name: { type: String, required: true },
+    current_height: { type: String, required: true },
+    current_weight: { type: String, required: true },
+  },
+  { timestamps: true }
+);
+
+const Exercise = new Schema(
+  {
+    name: { type: String, required: true },
+    description: { type: String, required: true },
+    duration: { type: Number, required: true },
+    date: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+
+</pre>
 
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
