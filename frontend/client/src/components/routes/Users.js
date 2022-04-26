@@ -24,8 +24,8 @@ function Users() {
   }, []);
   const usersData = users.map((user) => {
     return (
-      <li className="vanilla" key={user._id}>
-        <NavLink className="vanilla" to={`/users/${user._id}`}>
+      <li className="users-names" key={user._id}>
+        <NavLink className="users-names" to={`/users/${user._id}`}>
           {user.name}
         </NavLink>
       </li>

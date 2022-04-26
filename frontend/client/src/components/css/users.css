@@ -65,3 +65,10 @@ li a:hover {
   font-weight: bolder;
   size: 300px;
 }
+
+.users-names {
+  color: white;
+  font-weight: bolder;
+  size: 300px;
+  text-shadow: 1px 1px red;
+}
