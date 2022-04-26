@@ -5,7 +5,7 @@ I have gone thru many changes In my project but I still have a lot off additions
 
 ## DEPLOYMENT(Links)
 Heroku https://final-workout-database.herokuapp.com/api/users<br/>
-Netlify 
+Netlify https://stunning-semifreddo-6298ec.netlify.app/
 
 ## Workit is an exercise tracker for individuals who would like to track their time being active.
 
