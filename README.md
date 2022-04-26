@@ -16,4 +16,7 @@ Individuals who sign up for the tracker will be able to do the following:<br/>
 > 7. Delete user <br/>
 > 8. See all logged exercises
 
+## API endpoints
+* https://final-workout-database.herokuapp.com/api  HOME PAGE
+
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
