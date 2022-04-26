@@ -39,7 +39,7 @@ Backend:<br/>
 * Nodemon
 
 ## Wireframe
-
+![Wireframe](Wireframe.png)
 
 ## MVP
 * Full CRUD for User info
