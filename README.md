@@ -26,5 +26,7 @@ Individuals who sign up for the tracker will be able to do the following:<br/>
 * https://final-workout-database.herokuapp.com/api/create-exercise  CREATE EXERCISE
 
 ## Dependencies
+Frontend:<br/>
+*React
 
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
