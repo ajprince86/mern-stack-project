@@ -5,7 +5,7 @@ import "../css/home.css";
 const Home = () => {
   return (
     <Layout>
-      <h1 className="new-font">Welcome to the Health App</h1>
+      <h1 className="new-font">Welcome to the WORKit App</h1>
       <p className="initial">
         Helping you reach your workout goals <br /> one day at a time
       </p>

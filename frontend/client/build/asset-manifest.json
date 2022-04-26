@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.caff86b3.css",
+    "main.js": "/static/js/main.8b026976.js",
+    "static/media/workout_7.png": "/static/media/workout_7.b28aa82d84b6db6e831d.png",
+    "static/media/workout_2.png": "/static/media/workout_2.d8af2f7246d5d73141a1.png",
+    "static/media/workout_3.png": "/static/media/workout_3.4c83b2422c5141c8b7c5.png",
+    "static/media/workout_6.png": "/static/media/workout_6.084475c8b0a7b8fbebe6.png",
+    "static/media/workout_4.avif": "/static/media/workout_4.48436b64d13d12ec2d2e.avif",
+    "static/media/workout_fail.png": "/static/media/workout_fail.05d4e5b46e3602317c91.png",
+    "index.html": "/index.html",
+    "main.caff86b3.css.map": "/static/css/main.caff86b3.css.map",
+    "main.8b026976.js.map": "/static/js/main.8b026976.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caff86b3.css",
+    "static/js/main.8b026976.js"
+  ]
+}
