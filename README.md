@@ -33,5 +33,10 @@ Frontend:<br/>
 * React-Router-Dom
 
 Backend:<br/>
-
+* Cors
+* Dotenv
+* Express
+* Mongoose
+* Morgan
+* Nodemon
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
