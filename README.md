@@ -57,4 +57,18 @@ Backend:<br/>
 * https://final-workout-database.herokuapp.com/api/exercises       Exercises LOGGED 
 * https://final-workout-database.herokuapp.com/api/create-exercise  CREATE EXERCISE
 
+## SCHEMAS
+const Exercise = new Schema(
+  {
+    name: { type: String, required: true },
+    description: { type: String, required: true },
+    duration: { type: Number, required: true },
+    date: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
