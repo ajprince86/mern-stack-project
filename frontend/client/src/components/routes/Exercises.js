@@ -42,10 +42,9 @@ function Exercises() {
   }, [deleted, navigate]);
 
   return (
-    <div>
-      <Layout>
+    <Layout>
+      <div className="exercises">
         <h1 className="new-font">Logged Exercises</h1>
-
         <div class="tbl-header">
           <table cellpadding="0" cellspacing="0" border="0">
             <thead>
@@ -87,8 +86,8 @@ function Exercises() {
         <button className="back-home" onClick={() => navigate(`/`)}>
           Back to Home
         </button>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 }
 export default Exercises;

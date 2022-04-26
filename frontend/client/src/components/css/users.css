@@ -6,31 +6,18 @@ ul {
 
 li {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
-  border-bottom: 1px solid black;
-  color: red;
-}
-
-li:last-child {
-  border: none;
+  /* color: red; */
 }
 
 li a {
   text-decoration: none;
-  color: red;
-  display: block;
-  width: 200px;
   font-weight: bolder;
   font-family: "Roboto", sans-serif;
 }
 
 li a:hover {
   font-size: 30px;
-  background: #f6f6f6;
-}
-
-button {
-  background-color: red;
-  border-radius: 25%;
+  background: red;
 }
 
 .create-user {
@@ -42,25 +29,39 @@ button {
   cursor: pointer;
   font-size: 15px;
   height: 45px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   outline: 0;
   text-align: center;
   width: 8%;
   font-weight: bolder;
 }
 
-.back-home {
-  background-color: black;
+.back_home {
+  background-color: red;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
-  color: red;
+  color: black;
   cursor: pointer;
   font-size: 15px;
   height: 45px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   outline: 0;
   text-align: center;
   width: 8%;
   font-weight: bolder;
+}
+
+.users {
+  background-image: url("https://images.unsplash.com/photo-1554284126-aa88f22d8b74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHdvcmtvdXR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vanilla {
+  color: white;
+  font-weight: bolder;
+  size: 300px;
 }

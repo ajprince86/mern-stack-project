@@ -129,8 +129,8 @@ function User() {
       <button className="bmi-calc" onClick={bmiCalculator}>
         GET BMI
       </button>
-      <h2>{bmi}</h2>
-      <p>Based on your height weight you are</p>
+      <h2>BMI: {bmi}</h2>
+      <p>Your current bmi is</p>
       <p>{status}</p>
       <Calculation bmi={bmi} />
       <br />

@@ -19,36 +19,37 @@ function Users() {
       console.error(error);
     }
   };
-
   useEffect(() => {
     fetchData();
   }, []);
-
   const usersData = users.map((user) => {
     return (
-      <li key={user._id}>
-        <NavLink to={`/users/${user._id}`}>{user.name}</NavLink>
+      <li className="vanilla" key={user._id}>
+        <NavLink className="vanilla" to={`/users/${user._id}`}>
+          {user.name}
+        </NavLink>
       </li>
     );
   });
 
   return (
-    <div>
-      <Layout>
-        <h1 className="new-font">Our Current Users</h1>
-        <p>Join our growing community</p>
+    <Layout>
+      <h1 className="new-font">Our Current Users</h1>
+      <div className="users">
+        <p className="vanilla">Join our growing community</p>
         <button
           className="create-user"
           onClick={() => navigate(`/create-user`)}
         >
-          Create User
+          Create User{" "}
         </button>
         <ul>{usersData}</ul>
-        <button className="back-home" onClick={() => navigate(`/`)}>
-          Back to Home
+        <br />
+        <button className="back_home" onClick={() => navigate(`/`)}>
+          Back Home
         </button>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 }
 export default Users;
