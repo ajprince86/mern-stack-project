@@ -20,6 +20,7 @@ Individuals who sign up for the tracker will be able to do the following:<br/>
 * https://final-workout-database.herokuapp.com/api               HOME PAGE/ROOT
 * https://final-workout-database.herokuapp.com/api/users         ACTIVE USERS 
 * https://final-workout-database.herokuapp.com/api/create-user   CREATE USER
+* https://final-workout-database.herokuapp.com/api/users/{id}/edit  EDIT USER PROFILE
 * https://final-workout-database.herokuapp.com/api/users{id}      USER PROFILE  
 * https://final-workout-database.herokuapp.com/api/exercises       Exercises LOGGED 
 <br/> It also features a bmi calculation for those who want to see where they are currently.<br/> Workit also provides how much weight you should lose or gain based on your measurements.<br/>
