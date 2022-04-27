@@ -41,6 +41,8 @@ Backend:<br/>
 ## Wireframe
 ![Wireframe](Wireframe.png)
 
+![Heirarchy](Hierarchy.png)
+
 ## MVP
 * Full CRUD for User info
 * Calculate BMI(adjusted by me)
