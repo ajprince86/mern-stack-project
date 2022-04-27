@@ -43,7 +43,7 @@ Backend:<br/>
 
 
 ## Heirarchy
-![Heirarchy](Hierarchy.png)
+![Heirarchy](Heirarchy.png)
 
 ## MVP
 * Full CRUD for User info
