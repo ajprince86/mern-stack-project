@@ -41,6 +41,8 @@ Backend:<br/>
 ## Wireframe
 ![Wireframe](Wireframe.png)
 
+
+## Heirarchy
 ![Heirarchy](Hierarchy.png)
 
 ## MVP
